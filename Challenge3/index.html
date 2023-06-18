@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Net Salary Calculator</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1>Net Salary Calculator</h1>
+  
+  <label for="basicPay">Basic Pay:</label>
+  <input type="number" id="basicPay">
+  <br>
+  
+  <label for="benefits">Benefits:</label>
+  <input type="number" id="benefits">
+  <br>
+  
+  <label for="deductibles">Deductibles:</label>
+  <input type="number" id="deductibles">
+  <br>
+  
+  <button onclick="calculateGrossPay()">Calculate Gross Pay</button>
+  <p id="grossPayResult"></p>
+  
+  <button onclick="calculateDeductibles()">Calculate Deductibles</button>
+  <p id="deductiblesResult"></p>
+  
+  <button onclick="calculatePAYE()">Calculate PAYE</button>
+  <p id="payeResult"></p>
+  
+  <button onclick="calculateNetPay()">Calculate Net Pay</button>
+  <p id="netPayResult"></p>
+</body>
+</html>
