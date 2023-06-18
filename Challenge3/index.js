@@ -1,5 +1,5 @@
 const percentageTax = 30;
-// create a function to calculate the gross pay
+// create a function to calculate the gross pay by adding the basic salary to the benefits offered
 function calculateGrossPay() {
   const basicPay = parseFloat(document.getElementById("basicPay").value);
   const benefits = parseFloat(document.getElementById("benefits").value);
@@ -7,7 +7,7 @@ function calculateGrossPay() {
   
   document.getElementById("grossPayResult").textContent = `Gross Pay: ${grossPay.toFixed(2)}`;
 }
-// calculate the deductables from the input
+// outputs deductables from the input
 function calculateDeductibles() {
   const deductibles = parseFloat(document.getElementById("deductibles").value);
   
